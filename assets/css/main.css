@@ -1,53 +1,161 @@
-@import "bourbon";
 
-body {
-    background: #eee !important;    
-}
+      /* Reset CSS */
+      html, body, div, span, applet, object, iframe,
+      h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+      a, abbr, acronym, address, big, cite, code,
+      del, dfn, em, font, img, ins, kbd, q, s, samp,
+      small, strike, strong, sub, sup, tt, var,
+      b, u, i, center,
+      dl, dt, dd, ol, ul, li,
+      fieldset, form, label, legend,
+      table, caption, tbody, tfoot, thead, tr, th, td {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
 
-.wrapper {  
-    margin-top: 80px;
-  margin-bottom: 80px;
-}
+      }
 
-.form-signin {
-  width: 400px;
-  height: 500px;
-  padding: 15px 35px 45px;
-  margin: 0 auto;
-  background-color: #fff;
-  border: 1px solid rgba(0,0,0,0.1);
-  background: linear-gradient(45deg, #68B380 0%, #008080 100%);  
+      body{
+        background: #FAFAFA;
+      }
 
-  .form-signin-heading,
-    .checkbox {
-      margin-bottom: 30px;
-    }
+      #content{
+        background: linear-gradient(45deg, rgba(91,131,73,1) 0%, rgba(97,184,145,1) 43%, rgba(97,184,145,1) 66%);
+        border: thin solid #F5F5F5;
+        text-align: center;
+        margin-left: 500px;
+        width: 473px;
+        height: 500px;
+        top: 30%;
+      }
 
-    .checkbox {
-      font-weight: normal;
-    }
+      #no_account{
+        background: rgba(164,179,87,1);
+        border: thin solid #F5F5F5;
+        
+        width: 248px;
+       
+        bottom: 0%;
+        top: 31%;
+      }
 
-    .form-control {
-      position: relative;
-      font-size: 16px;
-      height: auto;
-      padding: 10px;
-        @include box-sizing(border-box);
+      #no_account a{
+        color: #62B1F6;
+        position: relative;
+        letter-spacing: -.5px;
+      }
 
-        &:focus {
-          z-index: 2;
-        }
-    }
+      #get_app{
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+        top: 34%;
+       margin-top: 50px;
+      }
 
-    input[type="text"] {
-      margin-bottom: -1px;
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0;
-    }
+      #photos{
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+        width: 33%;
+        bottom: 0%;
+        top: 35%;
+        left: 33%;
+        float: left;
+        display: inline-block;
+      }
 
-    input[type="password"] {
-      margin-bottom: 20px;
-      border-top-left-radius: 0;
-      border-top-right-radius: 0;
-    }
+      .apps {
+        margin-left: 50px;
+      }
+
+      .apps2{
+        margin-left:50px;
+      }
+
+      .facebook-official {
+        color: blue;
+        margin-left: 20px;
+      }
+
+      h2{
+        color: black;
+        font-size:  70px;
+        letter-spacing: -.02em;
+        line-height: 20px;
+        margin: 20px 10px 32px;
+        font-family: "Tangerine";
+      }
+
+      h3, h4{
+        font-size: 15px;
+        font-weight: lighter;
+        margin-top: -400px;
+        margin-left: 10px;
+      }
+
+      a{
+        text-decoration: none;
+      }
+      #password_username{
+        width: 100%;
+      }
+      #content form input[type="password"]{
+        width: 85%;
+        left: 2px;
+        outline-width: .05px;
+        outline-color: #d3d3d3;
+
+      }
+      #content form input[type="text"]{
+        width: 85%;
+        outline-color: #d3d3d3;
+        outline-width: .05px;
+
+      }
+
+      #content form input[type="text"],
+      #content form input[type="password"],
+      #content form input[type="submit"]{
+        border: thin solid #d3d3d3;
+        background: transparent;
+        opacity: 0.5px;
+        border-bottom: : 5px;
+        font-weight: lighter;
+        margin-top: 23px;
+        padding: 14px 5px 36px 25px;
+        font-size: 13px;
+        
+      }
+      #content form input[type="text"]:hover,
+      #content form input[type="password"]:hover,
+      #content form input[type="submit"]:hover{
+        opacity: 0.5px;
+      }
+
+
+      #content form input[type="submit"]{
+        background: transparent;
+        color: white;
+        font-size: 15px;
+        border: 1px solid beige;
+        text-align: center;
+        position: relative;
+        width: 400px;
+        font-weight: normal;
+        padding: 6px;
+      }
+/* BEGINNING OF JQUERY/JS CSS*/
+#error1, #error2{
+  color: red;
+  font-size: 15px;
+  position: relative;
+  width: 85%;
+  padding: 15px 20px 30px 15px;
+  text-align: center;
+  left: 3%;
 }
